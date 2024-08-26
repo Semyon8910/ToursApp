@@ -1,0 +1,16 @@
+.mainLayout {
+	height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 14% 80% 6%;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.mainLayout>header,
+.mainLayout>footer {
+    grid-column: span 6;
+}
+
+.mainLayout>main{
+    overflow: auto;
+}
