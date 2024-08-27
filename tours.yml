@@ -26,13 +26,13 @@ services:
     #parameters such as: database,root user, normal user, password, etc...
     environment:
       #Root password (master user)
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: "12345678"
       #Database name
-      MYSQL_DATABASE: mydatabase
+      MYSQL_DATABASE: vacations
       #regular user name
       MYSQL_USER: user
       #mysql password(12345678)
-      MYSQL_PASSWORD: password
+      MYSQL_PASSWORD: "12345678"
     #Which ports we shell use
     ports: 
     #ports to be exposed
@@ -52,7 +52,7 @@ services:
     #set some parameters to handle the connection to phpmyadmin
     environment:
       #host is the name of the services that we using for mysql
-      PMA_HOST: localhost
+      PMA_HOST: mysql
       #user name as we write in mysql service
       PMA_USER: user
       #user password as we write in mysql password
