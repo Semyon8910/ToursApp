@@ -42,6 +42,7 @@ function Registration(): JSX.Element {
                 margin="normal"
                     value={userName}
                     onChange={(event) => setUserName(event.target.value)}
+                    inputProps={{ maxLength:44 }}
                     required
                 />
                 <TextField
@@ -50,6 +51,7 @@ function Registration(): JSX.Element {
                     margin="normal"
                     value={userSurname}
                     onChange={(event) => setUserSurname(event.target.value)}
+                    inputProps={{ maxLength:44 }}
                     required
                 />
                 <TextField
@@ -59,6 +61,7 @@ function Registration(): JSX.Element {
                     margin="normal"
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
+                    inputProps={{ maxLength:44 }}
                     required
                 />
                 <TextField

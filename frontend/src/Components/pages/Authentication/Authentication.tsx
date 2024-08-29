@@ -36,6 +36,7 @@ function Authentication(): JSX.Element {
                     margin="normal"
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
+                    inputProps={{ maxLength:44 }}
                     required
                 />
                 <TextField
